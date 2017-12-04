@@ -3,6 +3,10 @@
 <head>
   <meta charset="utf-8">
   <title>{{ .Site.Title }}</title>
+  <link rel="stylesheet" href="/style.css" />
+  <link rel="preload" href="/fonts/nobile-v9-latin-regular.woff2" as="font" crossorigin type="font/woff2" />
+  <link rel="preload" href="/fonts/martel-v2-latin-regular.woff2" as="font" crossorigin type="font/woff2" />
+  <link rel="preload" href="/fonts/source-code-pro-v7-latin-regular.woff2" as="font" crossorigin type="font/woff2" />
   <meta name="author" content="{{ .Site.Author.name }}">
   <meta name="description" content="{{ .Site.Params.description }}">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -21,7 +25,6 @@
   {{ end }}
   <link rel="icon" href="/favicon.png" />
   <link rel="apple-touch-icon-precomposed" href="/apple-touch-icon.png" />
-  <link rel="stylesheet" href="/style.css" />
 </head>
 
 <body class="{{ with .Site.Params.pageLayoutClass }}{{ . }}{{ end }}">
