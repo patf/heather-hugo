@@ -1,7 +1,7 @@
 
 {{ partial "head.html" . }}
 <main class="posts">
-  {{ range .Data.Pages }}
+  {{ range where .Data.Pages.ByPublishDate "Section" "posts" }}
   <article class="post">
       <h1><a href="{{ .Permalink }}">{{ .Title }}</a></h1>
       <p>{{ .Summary }}</p>

@@ -1,0 +1,6 @@
+{{ partial "head.html" . }}
+<main>
+  <h1><a href="{{ .Permalink }}" title="{{ .Title }}">{{ .Title }}</a></h1>
+  {{ .Content }}
+</main>
+{{ partial "foot.html" . }}
