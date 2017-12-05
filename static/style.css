@@ -42,6 +42,15 @@
        url('../fonts/source-code-pro-v7-latin-regular.svg#SourceCodePro') format('svg'); /* Legacy iOS */
 }
 
+.wf-loading body,
+.wf-loading article ol,
+.wf-loading article ul,
+.wf-loading p, .wf-loading .p,
+.wf-loading code,
+.wf-loading a, .wf-loading a:hover,
+.wf-loading h1 a {
+  visibility: hidden;
+}
 
 
 /* BASSCSS Reset - http://jxnblk.github.io/basscss */

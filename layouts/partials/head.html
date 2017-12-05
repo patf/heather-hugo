@@ -3,6 +3,15 @@
 <head>
   <meta charset="utf-8">
   <title>{{ .Site.Title }}</title>
+  <script src="/webfont.js"></script>
+  <script>
+    WebFont.load({
+      custom: {
+        families: ['Nobile', 'Martel', 'Source Code Pro'],
+      },
+      timeout: 1000
+    });
+  </script>
   <link rel="stylesheet" href="/style.css" />
   <link rel="preload" href="/fonts/nobile-v9-latin-regular.woff2" as="font" crossorigin type="font/woff2" />
   <link rel="preload" href="/fonts/martel-v2-latin-regular.woff2" as="font" crossorigin type="font/woff2" />
