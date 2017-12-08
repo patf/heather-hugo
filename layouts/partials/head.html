@@ -13,27 +13,28 @@
     });
   </script>
   <link rel="stylesheet" href="/style.css" />
-  <link rel="preload" href="/fonts/nobile-v9-latin-regular.woff2" as="font" crossorigin type="font/woff2" />
-  <link rel="preload" href="/fonts/martel-v2-latin-regular.woff2" as="font" crossorigin type="font/woff2" />
-  <link rel="preload" href="/fonts/source-code-pro-v7-latin-regular.woff2" as="font" crossorigin type="font/woff2" />
+  <link rel="preload" href="/fonts/nobile-v9-latin-regular.woff2" as="font" crossorigin type="font/woff2">
+  <link rel="preload" href="/fonts/martel-v2-latin-regular.woff2" as="font" crossorigin type="font/woff2">
+  <link rel="preload" href="/fonts/source-code-pro-v7-latin-regular.woff2" as="font" crossorigin type="font/woff2">
   <meta name="author" content="{{ .Site.Author.name }}">
   <meta name="description" content="{{ .Site.Params.description }}">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta property="og:title" content="{{ .Title }}" />
-  <meta property="og:description" content="{{ with .Description }}{{ . }}{{ else }}{{if .IsPage}}{{ .Summary }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}{{ end }}" />
-  <meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}" />
-  <meta property="og:url" content="{{ .Permalink }}" />
+  <meta property="og:description" content="{{ with .Description }}{{ . }}{{ else }}{{if .IsPage}}{{ .Summary }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}{{ end }}">
+  <meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}">
+  <meta property="og:url" content="{{ .Permalink }}">
   {{ if not .Date.IsZero }}
-  <meta property="og:updated_time" content="{{ .Date.Format "2006-01-02T15:04:05-07:00" | safeHTML }}"/>
+  <meta property="og:updated_time" content="{{ .Date.Format "2006-01-02T15:04:05-07:00" | safeHTML }}">
   {{ end }}
   {{ with .Site.LanguageCode }}
-  <meta property="og:locale" content="{{ replace . "-" "_" }}" />
+  <meta property="og:locale" content="{{ replace . "-" "_" }}">
   {{ end }}
   {{ with .Site.Title }}
-  <meta property="og:site_name" content="{{ . }}" />
+  <meta property="og:site_name" content="{{ . }}">
   {{ end }}
-  <link rel="icon" href="/favicon.png" />
-  <link rel="apple-touch-icon-precomposed" href="/apple-touch-icon.png" />
+  <link rel="alternate" type="application/atom+xml" title="Blog" href="/posts/index.xml">
+  <link rel="icon" href="/favicon.png">
+  <link rel="apple-touch-icon-precomposed" href="/apple-touch-icon.png">
 </head>
 
 <body class="{{ with .Site.Params.pageLayoutClass }}{{ . }}{{ end }}">
