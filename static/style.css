@@ -86,17 +86,17 @@ h1, h2, h3, h4, h5, h6 {
   -moz-osx-font-smoothing: grayscale;
 }
 h1, .h1 {
-  font-size: 24px;
+  font-size: 22px;
   margin-bottom: 24px;
 }
 h2, .h2, h3, .h3, h4, h5, h6 {
-  font-size: 18px;
+  font-size: 20px;
   margin-bottom: 16px;
 }
 article ol,
 article ul,
 p, .p {
-  font-size: 20px;
+  font-size: 18px;
   margin-bottom: 32px;
   font-family: 'Martel', 'PT Serif', 'Droid Serif', 'Source Serif Pro', 'Times New Roman', 'Times', serif;
 }
