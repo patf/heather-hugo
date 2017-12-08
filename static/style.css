@@ -94,7 +94,7 @@ h2, .h2, h3, .h3, h4, h5, h6 {
 article ol,
 article ul,
 p, .p {
-  font-size: 18px;
+  font-size: 20px;
   margin-bottom: 32px;
   font-family: 'Martel', 'PT Serif', 'Droid Serif', 'Source Serif Pro', 'Times New Roman', 'Times', serif;
 }
@@ -107,14 +107,14 @@ pre {
 }
 code {
   font-family: 'Source Code Pro', monospace;
-  font-size: 14px;
+  font-size: 16px;
 }
-small, .small { font-size: 16px; }
+small, .small { font-size: 18px; }
 
 @media screen and (min-width: 640px) {
   h1, .h1 { font-size: 36px; }
   h2, .h2 { font-size: 24px; }
-  p, .p   { font-size: 18px; }
+  p, .p   { font-size: 20px; }
 }
 
 a { color: #005E8F; text-decoration: none; }
