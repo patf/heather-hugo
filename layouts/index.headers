@@ -6,6 +6,6 @@
 */
   Link: <{{ "/style.css" | relURL }}>; rel=preload; as=style
   Link: <{{ "/webfont.js" | relURL }}>; rel=preload; as=script
-  Link: <{{ "/fonts/nobile-v9-latin-regular.woff2" | relURL }}>; rel=preload; as=font; type=font/woff2
-  Link: <{{ "/fonts/martel-v2-latin-regular.woff2" | relURL }}>; rel=preload; as=font; type=font/woff2
-  Link: <{{ "/fonts/source-code-pro-v7-latin-regular.woff2" | relURL }}>; rel=preload; as=font; type=font/woff2
+  Link: <{{ "/fonts/nobile-v9-latin-regular.woff2" | relURL }}>; rel=preload; as=font; crossorigin; type=font/woff2
+  Link: <{{ "/fonts/martel-v2-latin-regular.woff2" | relURL }}>; rel=preload; as=font; crossorigin; type=font/woff2
+  Link: <{{ "/fonts/source-code-pro-v7-latin-regular.woff2" | relURL }}>; rel=preload; as=font; crossorigin; type=font/woff2
