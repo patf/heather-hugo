@@ -4,8 +4,8 @@
   X-Content-Type-Options: nosniff
   Referrer-Policy: no-referrer-when-downgrade
 */
-  Link: <{{ "dist/style.css" | relURL }}>; rel=preload; as=style
-  Link: <{{ "dist/webfont.js" | relURL }}>; rel=preload; as=script
-  Link: <{{ "dist/fonts/nobile-v9-latin-regular.woff2" | relURL }}>; rel=preload; as=font type=font/woff2
-  Link: <{{ "dist/fonts/martel-v2-latin-regular.woff2" | relURL }}>; rel=preload; as=font type=font/woff2
-  Link: <{{ "dist/fonts/source-code-pro-v7-latin-regular.woff2" | relURL }}>; rel=preload; as=font type=font/woff2
+  Link: <{{ "/style.css" | relURL }}>; rel=preload; as=style
+  Link: <{{ "/webfont.js" | relURL }}>; rel=preload; as=script
+  Link: <{{ "/fonts/nobile-v9-latin-regular.woff2" | relURL }}>; rel=preload; as=font type=font/woff2
+  Link: <{{ "/fonts/martel-v2-latin-regular.woff2" | relURL }}>; rel=preload; as=font type=font/woff2
+  Link: <{{ "/fonts/source-code-pro-v7-latin-regular.woff2" | relURL }}>; rel=preload; as=font type=font/woff2
