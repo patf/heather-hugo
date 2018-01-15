@@ -32,7 +32,8 @@
   {{ with .Site.Title }}
   <meta property="og:site_name" content="{{ . }}">
   {{ end }}
-  <link rel="alternate" type="application/atom+xml" title="Blog" href="/posts/index.xml">
+  <link href="/index.xml" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" />
+  <link href="/index.xml" rel="feed" type="application/rss+xml" title="{{ .Site.Title }}" />
   <link rel="icon" href="/favicon.png">
   <link rel="apple-touch-icon-precomposed" href="/apple-touch-icon.png">
 </head>
